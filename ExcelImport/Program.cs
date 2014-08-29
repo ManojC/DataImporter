@@ -9,7 +9,7 @@ namespace ExcelImport
         public static void Main(string[] args)
         {
             var importer = new DataImporter();
-
+            Console.WriteLine("Import started !");
             try
             {
                 importer.ImportHotelDetails();
@@ -23,7 +23,8 @@ namespace ExcelImport
             {
                 Console.WriteLine(exception.Message);
             }
-            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Import finished !");
         }
     }
 }
